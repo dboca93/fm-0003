@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <title>Frontend Mentor | NFT preview card component</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+      <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="body--container">
+         <div class="main-card">
+            <div class="inner-card">
+               <div class="image-area">
+                  <img src="images/image-equilibrium.jpg" alt="Equilibrium Cube">
+                  <div class="overlay">
+                     <img src="images/icon-view.svg" alt="icon-view">
+                  </div>
+               </div>
+               <div class="text-area">
+                  <div class="text-area-1 base">
+                     <h3>  Equilibrium #3429</h3>
+                     <p>
+                        Our Equilibrium collection promotes balance and calm.
+                     </p>
+                  </div>
+                  <div class="text-area-2 base">
+                     <div class="major-left">
+                        <img src="images/icon-ethereum.svg" alt="icon-ethereum">
+                        <p class="left">
+                           0.041 ETH
+                        </p>
+                     </div>
+                     <div class="major-right">
+                        <img src="images/icon-clock.svg" alt="icon-clock">
+                        <p class="right">
+                           3 days left
+                        </p>
+                     </div>
+                  </div>
+                  <div class="text-area-attribution base">
+                     <div class="att-image">
+                        <img src="images/IMG_1707(2).JPG" alt="Selfie">
+                     </div>
+                     <div class="att-text">
+                        <p>
+                           Creation of<span class="white-ish">
+                           Dilhan Boca
+                           </span>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+            <!--This is an attempt to recreate a bottom nav-1 in a grid-box, potentially using 
+            flexbox on the internal container -- take the icons from the previous document 
+               via the repo so you don't need to close this file. We can also attempt to 
+            experiment with using a click event which will trigger an email send. -->
+            <div class="credit-position">
+                  <div class="bottom-credit">
+                     <div class="box internal-left"></div>
+                     <div class="box internal-center">
+                        <a href="https://twitter.com/dboca93" target="_blank" aria-label="Twitter Profile"><i class="lav lni lni-twitter-original"></i></a>
+                        <a href="mailto:dboca93@gmail.com" aria-label="email"><i class="lni lni-envelope"></i></a>
+                        <div class="class-image"> 
+                           <img src="images/IMG_1707(2).JPG" alt="Selfie">
+                        </div>
+                        <a href="https://www.linkedin.com/in/dilhan-boca-a3892294/" target="_blank" aria-label="linkedin Profile"><i class="lav lni lni-linkedin-original"></i></a>
+                        <a href="https://github.com/dboca93?tab=repositories" aria-label="github profile" target="_blank"><i class="lav lni lni-github-original"></i></a>
+                     </div>
+                     <div class="box internal-right"></div>
+                  </div>
+            </div>
+      </div>
+   </body>
+</html>
+
+

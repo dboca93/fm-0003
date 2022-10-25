@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--dark-blue-main);
+}
+/*This will allow 1rem = 1px we also have all of our color selections passed over from the style guide */
+/* *? Style Guide Notes font-size: 1.8rem --body Typog--- - 
+Family: [Outfit](https://fonts.google.com/specimen/Outfit) 
+- Weights: 300, 400, 600 
+--------------------- 
+Mobile: 375px;
+Desktop: 1440px;
+--------------------- */
+:root {
+    font-size: 62.5%;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: whitesmoke;
+    --ff: 'Outfit', sans-serif;
+}
+.body--container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue-main);
+}
+.main-card {
+    width: 35rem;
+    height: 60rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--dark-blue-card);
+    border-radius: 1.5rem;
+}
+.inner-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-area {
+    margin: 0 auto;
+    position: relative;
+}
+.image-area > img {
+    width: 31rem;
+    height: 31rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    border-radius: 1rem;
+}
+.text-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 45%;
+    width: 32rem;
+    margin: 0 auto;
+}
+.text-area-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+}
+.text-area-1 > h3 {
+    font-size: 2rem;
+}
+.text-area-1 > h3:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.text-area-1 > p {
+    margin-top: 1rem;
+    color: var(--soft-blue);
+    font-size: 1.6rem;
+}
+.text-area-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.major-left, .major-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cyan);
+    font-family: var(--ff);
+    font-size: 1.4rem;
+    width: 8rem;
+    font-weight: 600;
+}
+.text-area-2 > .left > img {
+    margin-top: 5rem;
+}
+.major-right {
+    font-weight: 400;
+    color: var(--soft-blue);
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.text-area-attribution {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: var(--dark-blue-line) 1px solid;
+}
+.text-area-attribution > .att-image > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    outline: 1px solid var(--white);
+}
+.white-ish {
+    color: var(--white);
+    padding-left: .3rem;
+}
+.white-ish:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.att-text {
+    width: 90%;
+    text-align: center;
+}
+.att-text > p {
+    width: 60%;
+    font-family: var(--ff);
+    color: var(--soft-blue);
+    font-size: 1.6rem;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+/* Active Section--START*/
+/* the technique to do this was taken from: */
+.overlay {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.overlay:hover {
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, 0.4);
+}
+.overlay > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.overlay:hover {
+    cursor: pointer;
+}
+/* Active Section--END*/
+@media only screen and (max-width: 420px) {
+    .main-card {
+        width: 30rem;
+   }
+    .image-area > img {
+        width: 29rem;
+        height: 29rem;
+   }
+    .text-area {
+        width: 29rem;
+   }
+    .att-text > p {
+        font-size: 1.4rem;
+   }
+}
+
+/*Permanent-Attribution: brought over from previous document*/
+.lni {
+    font-size: xx-large;
+    width: 5rem; 
+    height: 5rem; 
+    color: var(--white);
+}
+.lni:hover {
+    cursor: pointer; 
+    font-size: 3.4rem;
+        
+}
+/* new finesse attribution*/
+.credit-position {
+    position: absolute;
+    top: 100%;
+    height: 80px; 
+    width: 100%;
+    background-color: var(--dark-blue-card);
+    margin-top: 1%;
+
+}
+.bottom-credit {
+    display: grid; 
+    height: 75px; 
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: .5rem;
+}
+.lni {
+    font-size: xx-large;
+    width: 5rem; 
+    height: 5rem; 
+}
+.lni:hover {
+    cursor: pointer; 
+    font-size: 3.4rem;
+        
+}
+.internal-center {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+.class-image {
+    margin-right: 3%; 
+    margin-bottom: 3%;
+}
+.class-image > img {
+    height: 4.1rem; 
+    width: 4.1rem;
+    border-radius: 50%;
+}
