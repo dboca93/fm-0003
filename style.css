@@ -126,7 +126,6 @@ Desktop: 1440px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    outline: 1px solid var(--white);
 }
 .white-ish {
     color: var(--white);
