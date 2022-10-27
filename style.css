@@ -25,6 +25,8 @@ Desktop: 1440px;
     --ff: 'Outfit', sans-serif;
 }
 .body--container {
+    position: relative; 
+    z-index: 1;
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -174,7 +176,8 @@ Desktop: 1440px;
 /* Active Section--END*/
 @media only screen and (max-width: 420px) {
     .main-card {
-        width: 30rem;
+        width: 29rem;
+        height: 54rem;
    }
     .image-area > img {
         width: 29rem;
@@ -202,12 +205,15 @@ Desktop: 1440px;
 }
 /* new finesse attribution*/
 .credit-position {
-    position: absolute;
+    position: sticky; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
     top: 100%;
     height: 80px; 
     width: 100%;
-    background-color: var(--dark-blue-card);
-    margin-top: 1%;
+    background-color: lightcoral;
+    margin-top: 1rem;
 
 }
 .bottom-credit {
@@ -239,7 +245,26 @@ Desktop: 1440px;
     margin-bottom: 3%;
 }
 .class-image > img {
-    height: 4.1rem; 
-    width: 4.1rem;
-    border-radius: 50%;
+    height: 3.5rem; 
+    width: 3.5rem;
+    border-radius: 15%;
+    margin-right: .5rem; 
+    margin-bottom: .2rem;
+}
+
+@media only screen and (max-width: 420px) {
+    .lni {
+        font-size: 2.8rem;
+    }
+    .class-image > img {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 10%;
+        margin-bottom: 1.2rem;
+        margin-right: 1rem;
+      }
+      .bottom-credit {
+        height: 6.5rem; 
+        padding-top: 1.8rem;
+      }
 }
