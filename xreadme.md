@@ -9,21 +9,12 @@
 With this project, I tried something different by using flex-box within a grid structure. 
 The grid structure was simple, one column with three rows. Each grid-box had a flex-box
 inside; allowing me to style each one individually. 
-
 Are there any simpler approaches ? Would love your feedback :)
-
-## Completion: 
-
-1. Add the other attribution from the previous document. 
-2. Push the completed task. 
-3. Then, collect the live/repo links, and come back to the read-me and add these. 
-4. Make sure we send a link of these online, and also contact as many people 
-online as we can to get some much needed feedback. 
 
 ## Links
 
-- Solution URL: [Repo Link](https://your-solution-url.com)
-- Live Site URL: [Vercel Link](https://your-live-site-url.com)
+- Solution URL: [Repo Link](https://github.com/dboca93/fm-0003)
+- Live Site URL: [Vercel Link](https://vercel.com/dboca93/fm-0003)
 
 ## Screenshot
 
